@@ -1,0 +1,328 @@
+/* ==========================================================
+   ANSH GUPTA — PORTFOLIO STYLESHEET
+   Clean, Modern CSS with Shape Accents & Color Highlights
+   ========================================================== */
+
+/* 1. Page Reset & Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 50%, #e2e8f0 100%);
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+/* 2. Main Container Card with Top Accent Strip */
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 16px;
+    border-top: 6px solid #2563eb;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* 3. Header Banner with Gradient Shape */
+h1 {
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #2563eb 100%);
+    color: #ffffff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    border-bottom: 4px solid #38bdf8;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.25);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* 4. Section Headings with Shape Accents */
+h2 {
+    display: inline-block;
+    color: #1e3a8a;
+    font-size: 19px;
+    margin: 25px 0 12px;
+    padding: 6px 16px;
+    background: linear-gradient(90deg, #eff6ff 0%, #ffffff 100%);
+    border-left: 5px solid #2563eb;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+h3 {
+    display: inline-block;
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: #eff6ff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border-left: 3px solid #3b82f6;
+    margin: 15px 0 10px 0;
+}
+
+/* 5. Section Cards (Fieldsets) */
+fieldset {
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+    border-radius: 10px;
+    padding: 22px 25px;
+    margin-bottom: 22px;
+    background-color: #f8fafc;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+fieldset:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+/* 6. Pill Badge for Legend */
+legend {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+/* 7. Profile Picture & Skill Image Framing */
+.profile-img {
+    float: right;
+    width: 150px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #2563eb;
+    outline: 3px solid #bfdbfe;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.2);
+    margin-left: 20px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.02);
+}
+
+.skills-img {
+    float: right;
+    width: 190px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #cbd5e1;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Clearfix for Floated Images */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 8. Text Color Highlights & Badges */
+p {
+    font-size: 14.5px;
+    color: #334155;
+}
+
+/* Highlight personal details labels */
+fieldset p b {
+    color: #1e3a8a;
+    background-color: #eff6ff;
+    padding: 2px 7px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 2px 3px 2px 0;
+    font-size: 13.5px;
+}
+
+/* Highlight skill category labels */
+ul li b {
+    color: #1e3a8a;
+    background-color: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border-left: 3px solid #2563eb;
+}
+
+/* 9. Custom Shape List Bullets */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 16px 0;
+}
+
+li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.6;
+}
+
+li::before {
+    content: "■";
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    color: #2563eb;
+    font-size: 11px;
+}
+
+/* 10. Education Table with Status Buttons */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 13.5px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #f8fafc;
+}
+
+tr:hover {
+    background-color: #eff6ff;
+    transition: background-color 0.2s ease;
+}
+
+/* Button shapes for table links */
+table a {
+    display: inline-block;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    padding: 5px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+table a:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+}
+
+/* Green status pill for "Pursuing" */
+table a[href="#"] {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.25);
+}
+
+table a[href="#"]:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+}
+
+/* 11. Projects Styling with Ribbon Shapes */
+.project-title {
+    background: linear-gradient(90deg, #eff6ff 0%, #ffffff 100%);
+    color: #1e3a8a;
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* 12. General Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1d4ed8;
+}
+
+/* 13. Footer with Dashed Accent */
+footer {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    padding-top: 20px;
+    border-top: 2px dashed #cbd5e1;
+}
+
+/* 14. Mobile Responsive View */
+@media (max-width: 680px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 20px 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+
+    .profile-img, .skills-img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+
+    th, td {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+
+    table a {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
